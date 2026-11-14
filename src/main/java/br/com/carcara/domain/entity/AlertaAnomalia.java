@@ -33,8 +33,7 @@ public record AlertaAnomalia (
             throw new IllegalArgumentException("Justificativa não pode ser vazia ou conter apenas espaços em branco.");
         }
         Objects.requireNonNull(numeroContrato, "NumeroContrato não pode ser nulo");
-        if (numeroContrato.isBlank()) {
-            throw new IllegalArgumentException("NumeroContrato não pode ser vazio ou conter apenas espaços em branco.");
-        }
+        if(numeroContrato.isBlank())
+            throw new IllegalArgumentException("NumeroContrato não pode ser vazia ou conter apenas espaços em branco.");
     }
 }
