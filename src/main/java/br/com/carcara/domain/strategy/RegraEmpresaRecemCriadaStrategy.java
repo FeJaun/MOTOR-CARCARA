@@ -8,6 +8,7 @@ import br.com.carcara.domain.enums.TipoAnomalia;
 import br.com.carcara.domain.valueobject.Money;
 
 import java.math.BigDecimal;
+
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Objects;
